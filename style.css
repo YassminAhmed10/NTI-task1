@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.parent {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 45%;
+    padding: 20px 30px;
+    height: 100vh;
+    background: white;
+}
+
+.right {
+    width: 55%;
+    height: 100vh;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #1aa7ff;
+    border-bottom: 2px solid #1aa7ff;
+    padding-bottom: 10px;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 7px 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row .field {
+    width: 50%;
+}
+
+.gender {
+    display: flex;
+    gap: 25px;
+    margin-top: 6px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.gender input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.hint {
+    font-size: 13px;
+    color: gray;
+    margin: 5px 0 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.check-item input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+button {
+    width: 120px;
+    padding: 10px 8px;
+    border-radius: 20px;
+    border: none;
+    background: #1aa7ff;
+    color: white;
+    display: block;
+    margin: 15px auto 0;
+    font-size: 14px;
+    font-weight: bold;}
